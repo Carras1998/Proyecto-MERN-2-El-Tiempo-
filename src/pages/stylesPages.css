@@ -1,0 +1,104 @@
+/* Estilos en general */
+.container > h1 {
+  color: var(--color-txt-black);
+}
+
+/* Estilos para MainView(Hoy) */
+.target-weather-main-view {
+  background-color: var(--color-bg-target);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.3rem;
+  height: 22rem;
+  max-width: 25rem;
+  min-width: 18rem;
+}
+
+.target-weather-main-view > h2 {
+  font-size: 2.5rem;
+}
+
+.target-weather-main-view > p > img {
+  width: 25px;
+}
+
+
+/* Estilos para FiveDaysMainView(Próximos 5 días) y para FiveDaysInCities(Ciudades de España) */
+.target-weather-wo-tittle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  min-width: 20rem;
+}
+
+.target-weather-wo-tittle > div {
+  margin: 0.3rem;
+  padding: 8px;
+  height: 18rem;
+  max-width: 12rem;
+  min-width: 8rem;
+  background-color: var(--color-bg-target);
+  border-radius: 20px;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.target-weather > h2 {
+  font-size: 2.5rem;
+  color: var(--color-txt-black);
+}
+
+.target-weather > div > div > p > img {
+  width: 25px;
+}
+
+.container > select {
+  margin: 0.3rem;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: var(--color-bg-target);
+  color: var(--color-txt-white);
+}
+.target-weather-wo-tittle > div > p {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .target-weather-wo-tittle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.target-weather-wo-tittle > div {
+  height: 16rem;
+  max-width: 12rem;
+}
+.target-weather > h2 {
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+}
+
+@media (max-width:425px) {
+.target-weather-wo-tittle > div {
+    height: 14rem;
+    max-width: 8rem;
+}
+.target-weather > h2 {
+    font-size: 1.5rem;
+    padding-top: 12rem;
+}
+.target-weather-wo-tittle > div > h3 {
+  font-size: 0.8rem;
+}
+.target-weather-wo-tittle > div > p {
+  font-size: 0.6rem;
+}
+}
